@@ -18,5 +18,41 @@ html {
     font-family: 'Fraunces', serif;
     font-family: 'Montserrat', sans-serif;
 }
+
+/*Card Styles*/
+
+.product-main {
+    width: 100%;
+    min-height: 95vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--cream);
+}
+.product-card-container {
+    width: 540px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 8px;
+}
+.product-card--img {
+    width: 100%;
+    height: auto;
+    background-image: url('../images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 0 0 8px;
+}
+.product-card--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: 0 12px 12px 0;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
