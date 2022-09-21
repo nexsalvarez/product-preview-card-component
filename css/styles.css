@@ -19,7 +19,7 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Card Styles*/
+/*Card styles*/
 
 .product-main {
     width: 100%;
@@ -118,5 +118,24 @@ html {
     width: 16px;
     height: 16px;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+/*Footer styles*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    width: 100%;
+    min-height: 5vh;
+    background-color: var(--cream);
+}
+.attribution p {
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--very-dark-blue);
+}
+.attribution a {
+    color: var(--dark-cyan);
+}
