@@ -77,6 +77,7 @@ html {
 .product-price-container {
     display: flex;
     gap: 20px;
+    padding: 12px 0;
 }
 .product-price-container .product-price--discount {
     font-family: 'Fraunces', serif;
@@ -87,6 +88,35 @@ html {
 .product-price-container .product-price--real {
     place-self: center;
     text-decoration: line-through;
+}
+
+/*Button style*/
+
+.product-button-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.product-button-container button {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 0;
+    background-color: var(--dark-cyan);
+    border: none;
+    border-radius: 6px;
+    font-size: var(--sm);
+    font-weight: 700;
+    color: var(--white);
+}
+.product-button-container button:hover {
+    background-color: #1A4031;
+    cursor: pointer;
+}
+.product-button-container figure img {
+    width: 16px;
+    height: 16px;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
