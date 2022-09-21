@@ -1,0 +1,25 @@
+body {
+    overflow: hidden;
+}
+.product-main {
+    overflow: hidden;
+}
+.product-card-container {
+    width: 90%;
+    min-height: 600px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(270px, 580px);
+    justify-self: center;
+    margin: 20px;
+}
+.product-card--img {
+    background-image: url('../images/image-product-mobile.jpg');
+    border-radius: 8px 8px 0 0;
+}
+.product-card--info {
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+}
+.product-card--info p {
+    padding-bottom: 12px;
+}
