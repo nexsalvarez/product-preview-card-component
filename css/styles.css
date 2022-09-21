@@ -6,7 +6,7 @@
     --white: hsl(0, 0%, 100%);
     --sm: 1.4rem;
     --md: 1.6rem;
-    --lg: 2rem;
+    --lg: 3.2rem;
 }
 * {
     box-sizing: border-box;
@@ -15,7 +15,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Fraunces', serif;
+    /*font-family: 'Fraunces', serif;*/
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,8 +29,8 @@ html {
     background-color: var(--cream);
 }
 .product-card-container {
-    width: 540px;
-    height: 400px;
+    width: 580px;
+    height: 440px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -50,9 +50,43 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px;
+    padding: 28px;
     background-color: var(--white);
     border-radius: 0 12px 12px 0;
+}
+
+/*Info styles*/
+
+.product-card--info p {
+    font-size: var(--sm);
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 20px;
+}
+.product-card--info .product--type {
+    letter-spacing: 0.4rem;
+}
+.product-card--info h1 {
+    font-family: 'Fraunces', serif;
+    font-size: var(--lg);
+    line-height: 3.2rem;
+    color: var(--very-dark-blue);
+    padding-bottom: 20px;
+}
+.product-price-container {
+    display: flex;
+    gap: 20px;
+}
+.product-price-container .product-price--discount {
+    font-family: 'Fraunces', serif;
+    font-size: var(--lg);
+    line-height: 3.2rem;
+    color: var(--dark-cyan);
+}
+.product-price-container .product-price--real {
+    place-self: center;
+    text-decoration: line-through;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
